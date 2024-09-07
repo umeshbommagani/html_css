@@ -1,20 +1,18 @@
 body {
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body > header{
+body > header {
     background-color: white;
 }
-
-
 
 header {
     text-align: center;
 }
 
-h1{
-    color:white
+h1 {
+    color: white;
 }
 
 nav {
@@ -27,40 +25,45 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: whitesmoke;
     padding: 14px 12px;
     display: inline-block;
     transition: all 0.3s ease;
 }
-nav ul li a:hover{
-    color:#dadce5;
-    box-shadow: 0px 0px 10px 3px  rgba(225, 255, 255, 0.6);
+
+nav ul li a:hover {
+    color: #dadce5;
+    box-shadow: 0px 0px 10px 3px rgba(225, 255, 255, 0.6);
     border-radius: 4px;
 }
-h2{
+
+h2 {
     color: blue;
 }
-.card img{
+
+.card img {
     max-width: 300px;
     margin-left: 420px;
 }
-section{
+
+section {
     background-color: white;
     padding: 4px;
     border-radius: 4px;
     margin: 6px;
 }
 
-ul li{
-    padding:0;
+ul li {
+    padding: 0;
 }
 
 .grid-container {
@@ -72,26 +75,25 @@ ul li{
 }
 
 .grid-item {
-    background-color:#e0e0e0e0;
+    background-color: #e0e0e0e0;
     padding: 10px;
-    border-radius:4px;
+    border-radius: 4px;
     text-align: center;
     font-size: 14px;
     color: #333;
     max-width: 190px;
     box-sizing: border-box;
-    
 }
 
-.grid-item h2{
+.grid-item h2 {
     color: #1a41d6;
     margin: 0 0 10px 0;
 }
+
 .grid-item p {
     font-size: 10px;
     margin: 0;
 }
-
 
 .hero {
     position: relative;
@@ -143,4 +145,48 @@ ul li{
 
 .cta-button:hover {
     background-color: #0262ff;
+}
+.honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.hexagon {
+    position: relative;
+    width: 150px;
+    height: 130px; 
+    background-color: #e0e0e0;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.hexagon:nth-child(odd) {
+    margin-top: 65px;
+}
+
+.hexagon:hover {
+    background-color:yellow;
+}
+
+.hex-content {
+    text-align: center;
+    color: blue;
+}
+
+.hex-content h3 {
+    margin: 0;
+    font-size: 1rem;
+    color:blue;
+}
+
+.hex-content p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #ddd;
 }
