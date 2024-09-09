@@ -1,192 +1,230 @@
 body {
-    background-color: #f4f4f4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body > header {
-    background-color: white;
-}
-
-header {
-    text-align: center;
-}
-
-h1 {
-    color: white;
+h2 {
+    color: #0044cb;
 }
 
 nav {
-    background-color: black;
-    margin: 4px;
+    background-color: rgb(7, 7, 7);
     text-align: center;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
+.navbar ul li {
     list-style-type: none;
-}
-
-nav ul li {
+    color: whitesmoke;
     display: inline-block;
-    margin-right: 20px;
+    padding: 12px 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: whitesmoke;
-    padding: 14px 12px;
-    display: inline-block;
-    transition: all 0.3s ease;
+    color: white;
 }
 
-nav ul li a:hover {
-    color: #dadce5;
-    box-shadow: 0px 0px 10px 3px rgba(225, 255, 255, 0.6);
-    border-radius: 4px;
+nav ul li:hover {
+    background-color: #0044cb
 }
 
-h2 {
-    color: blue;
+#curriculum {
+    margin-bottom: 10px;
 }
 
-.card img {
-    max-width: 300px;
-    margin-left: 420px;
+.curriculum-section {
+    display: flex;
+
+}
+
+.curriculum-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1cap;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.curriculum-item:hover {
+    transform: translateY(-5px);
+}
+
+.curriculum-item h3 {
+    color: #0047ab;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    width: 20px;
+}
+
+.curriculum-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curriculum-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.main-content {
+    background-color: #f2f2f2;
+}
+
+.overview-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
+    margin: 20px;
+    padding: 10px 20px;
     background-color: white;
-    padding: 4px;
-    border-radius: 4px;
-    margin: 6px;
+    border-radius: 5px;
 }
 
-ul li {
-    padding: 0;
-}
-
-.grid-container {
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px 0;
-    justify-content: space-between;
-}
-
-.grid-item {
-    background-color: #e0e0e0e0;
-    padding: 10px;
-    border-radius: 4px;
+footer {
+    background-color: black;
+    color: whitesmoke;
     text-align: center;
-    font-size: 14px;
-    color: #333;
-    max-width: 190px;
-    box-sizing: border-box;
+    padding: 5px 20px;
 }
 
-.grid-item h2 {
-    color: #1a41d6;
-    margin: 0 0 10px 0;
-}
-
-.grid-item p {
-    font-size: 10px;
-    margin: 0;
-}
-
-.hero {
-    position: relative;
-    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url("https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png");
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    height: 50vh;
+    background-image: url('msitbg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.hero-overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .hero-content {
+    position: relative;
+    color: white;
     text-align: center;
-    padding: 20px;
+    z-index: 1;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero-content h1 {
+    font-size: 3em;
+    margin-top: 0;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
     color: white;
-}
-
-.cta-button {
-    background-color: #0040df;
-    color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #0262ff;
+.hero-content .btn:hover {
+    background-color: #0056b3;
 }
-.honeycomb {
+#overview {
+    max-height: 100%;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    /* display: flex; */
+}
+.overview-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
-    padding: 20px 0;
+    gap: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
 }
 
-.hexagon {
-    position: relative;
+.hex {
     width: 150px;
-    height: 130px; 
-    background-color: #e0e0e0;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
-}
-
-.hexagon:nth-child(odd) {
-    margin-top: 65px;
-}
-
-.hexagon:hover {
-    background-color:yellow;
-}
-
-.hex-content {
     text-align: center;
-    color: blue;
+    color: #333;
+    background: #f0f0f0;
+    margin: 0 10px;
+    position: relative;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    transition: background-color 0.3s ease;
 }
 
-.hex-content h3 {
-    margin: 0;
-    font-size: 1rem;
-    color:blue;
+.hex:hover {
+    background-color: #ffe500;
+    color: #000;
 }
 
-.hex-content p {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    color: #ddd;
+.hex span {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    color: #000;
+}
+
+
+
+.hex:nth-child(odd) {
+    transform: translateY(40px);
+}
+
+.hex:nth-child(even) {
+    transform: translateY(-40px);
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+.video-section iframe{
+    display: block;
+    margin:0 auto;
 }
